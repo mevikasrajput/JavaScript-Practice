@@ -1,10 +1,12 @@
 .body{
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 
 .main{
     font-family: 'Piedra', cursive;
+
 }
 
 .nav-center p{
