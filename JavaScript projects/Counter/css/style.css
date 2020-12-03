@@ -1,0 +1,63 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+}
+
+.container{
+    display: block;
+    height: 500px;
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    background-color: rgb(124, 179, 158);
+}
+
+.container h1{
+    padding-top: 150px;
+}
+
+#value{
+    font-size: 60px;
+}
+
+.button-container{
+    margin-top: 20px;
+}
+
+#decrease-btn{
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(229, 226, 226);
+    border: 1px solid black;
+}
+
+#reset-btn{
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(142, 255, 128);
+    border: 1px solid rgb(142, 255, 128);
+}
+
+#increase-btn{
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#decrease-btn:hover{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
+}
+
+#reset-btn:hover{
+    background-color:  rgb(6, 253, 39);
+    color:  rgb(0, 0, 0);
+}
+
+#increase-btn:hover{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
+}
