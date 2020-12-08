@@ -1,0 +1,110 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Castoro', serif;
+}
+
+.container{
+    display: block;
+    width: 50%;
+    height: 600px;
+    border: 1px solid red;
+    margin: 10px auto;
+}
+
+.title{
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.title p{
+    text-align: center;
+}
+
+.title p a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title p a::after{
+    content: "";
+    width: 70px;
+    height: 2px;
+    display: block;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -6;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.title p a:hover{
+    color: rgb(12, 163, 223);
+}
+
+.main{
+    display: block;
+    height: 300px;
+    width: 50%;
+    border: 1px solid green;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(208, 249, 255);
+}
+
+.img-circle1{
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    background-color:  rgb(0, 183, 255);
+    /* border: 1px solid greenyellow; */
+    border-radius: 50%;
+}
+
+.img-circle2{
+    height: 110px;
+    width: 110px;
+    /* background-color: rgb(0, 108, 128); */
+    /* border: 1px solid greenyellow; */
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.icon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(0, 183, 255);
+    /* border: 1px solid red; */
+}
+
+.logo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin: 4px 3px;
+}
+
+.png{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-top: 6px;
+    filter: invert(100);
+}
