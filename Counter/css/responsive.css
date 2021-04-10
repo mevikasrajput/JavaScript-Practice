@@ -1,0 +1,16 @@
+@media (max-width: 380px){
+    body .button-container{
+        display: grid;
+    }
+    body #decrease-btn{
+        display: block;
+        margin-bottom: 10px;
+    }
+    body #reset-btn{
+        display: block;
+        margin-bottom: 10px;
+    }
+    body #increase-btn{
+        display: block;
+    }
+}
