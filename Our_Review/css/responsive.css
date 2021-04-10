@@ -1,0 +1,11 @@
+@media(max-width: 768px) {
+    body .container{
+        width: 100%;
+    }
+    body .main{
+        width: 80%;
+    }
+    body #author{
+        text-transform: uppercase;
+    }
+}
