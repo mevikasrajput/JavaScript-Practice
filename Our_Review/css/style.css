@@ -1,3 +1,5 @@
+@import"./responsive.css";
+
 .body{
     margin: 0%;
     padding: 0%;
@@ -7,8 +9,6 @@
 .container{
     display: block;
     width: 50%;
-    height: 600px;
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 
@@ -17,7 +17,6 @@
     display: block;
     height: 50px;
     width: 50%;
-    /* border: 1px solid black; */
     margin-top: 50px;
     text-shadow: 2px 2px rgb(183, 235, 255);
 }
@@ -55,13 +54,13 @@
 
 .main{
     display: block;
-    height: 370px;
     width: 70%;
-    /* border: 1px solid green; */
     margin: 0 auto;
+    padding: 20px;
     margin-top: 5px;
     box-shadow: 0 3px 8px rgb(177 177 177);
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 .img-circle1{
@@ -69,18 +68,13 @@
     width: 120px;
     margin: 0 auto;
     background-color:  rgb(0, 183, 255);
-    /* border: 1px solid greenyellow; */
     border-radius: 50%;
 }
 
 .img-circle2{
     height: 110px;
     width: 110px;
-    /* background-color: rgb(0, 108, 128); */
-    /* border: 1px solid greenyellow; */
     border-radius: 50%;
-    margin-right: 10px;
-    margin-top: 10px;
     position: relative;
 }
 
@@ -90,7 +84,6 @@
     width: 30px;
     border-radius: 50%;
     background-color: rgb(0, 183, 255);
-    /* border: 1px solid red; */
 }
 
 #logo{
@@ -99,6 +92,7 @@
     width: 100%;
     border-radius: 50%;
     margin: 4px 3px;
+    object-fit: cover;
 }
 
 .png{
@@ -113,10 +107,9 @@
 
 .bio{
     display: block;
-    height: 120px;
-    /* border: 1px solid red; */
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 }
 
 #author{
@@ -136,42 +129,21 @@
     line-height: 20px;
     text-align: center;
     color: rgb(133, 133, 133);
+    padding: 0 25px;
+    margin-bottom: 20px;
 }
 
-/* .left{
-    position: absolute;
-    display: block;
-    margin: 0px auto;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 20px;
-    border-radius: 50% white;
-} */
-
-/* .right{
-    position: absolute;
-    display: block;
-    margin: 0px auto;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 20px;
-    border-radius: 50% white;
-} */
-
-/* .pre-btn{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 20px;
-    border-radius: 50% white;
-} */
-
-.pre-Btn{
+.common-slide-btn{
     border: 1px white;
-    background-color: #fff;
-    margin-left: 165px;
+    background-color: transparent;
     cursor: pointer;
-    /* border-radius: 50%; */
+    position: absolute;
+    top: 65px;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+.pre-Btn{
+    left: -21px;
 }
 
 .pre-Btn img{
@@ -180,10 +152,7 @@
 }
 
 .post-Btn{
-    border: 1px white;
-    /* background-color: #fff; */
-    margin-left: 70px;
-    cursor: pointer;
+    right: -21px;
 }
 
 .post-Btn img{
@@ -194,13 +163,14 @@
 
 .follow-Btn{
     display: block;
-    margin: 20px auto;
+    margin: 0px auto;
     border-radius: 6px;
     padding: .5rem 1.5rem;
-    font-family: initial;
+    font-family: 'Ubuntu', sans-serif;
     border: 2px solid  rgb(255, 255, 255);
     cursor: pointer;
     font-weight: 500;
     background-color:  rgb(0, 183, 255);
     color: aliceblue;
+    line-height: 20px;
 }
