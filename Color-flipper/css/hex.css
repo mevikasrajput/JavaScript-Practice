@@ -1,0 +1,75 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.main{
+    font-family: 'Piedra', cursive;
+
+}
+
+.nav-center p{
+    display: inline-block;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 350px;
+    font-weight: 900;
+    color:  rgb(0, 226, 151);
+}
+
+.nav-links li{
+    display: inline;
+    position: relative;
+    margin-left: 200px;
+}
+
+#hex{
+    margin-left: -100px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.nav-links li a:hover{
+    color:  rgb(0, 226, 151);
+}
+
+.container h2{
+    background-color: rgb(0, 0, 0);
+    padding: 30px 50px;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+#btn{
+    display: block;
+    margin: -80px auto;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Piedra', cursive;
+    opacity: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.color{
+    color:  rgb(0, 226, 151);
+}
+
+#btn:hover{
+    background-color:  rgb(0, 0, 0);
+    color:  rgb(0, 226, 151);
+    border-radius: 1px solid white;
+}

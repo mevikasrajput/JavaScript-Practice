@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: silver;
+}
+
+div{
+    height: auto;
+    width: 70%;
+    background: rgb(85, 77, 77);
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.container{
+    animation-name: rainbow;
+    animation-duration: 4s;
+    width: 40%;
+    height: 250px;
+    margin: 200px auto;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+@keyframes rainbow{
+    5%{
+      background-color: #ff0000;
+      text-transform: uppercase;
+    }
+
+    50%{
+      background-color: #f2f2f2;
+      text-transform: uppercase;
+    }
+
+    99%{
+      background-color: #3285dc;
+      text-transform: uppercase;
+    }
+  }
+
+ul {
+    margin-top: 20px;
+    display: inline-block;
+    list-style-type: square;
+    line-height: 35px;
+    color :silver; 
+  }
+
+.container li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li a:hover{
+    list-style-type: square;
+    color: silver;
+}
