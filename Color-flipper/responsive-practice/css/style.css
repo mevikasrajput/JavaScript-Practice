@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main-section{
+    width: 100%;
+    display: block;
+}
+
+.header-section{
+    width: 100%;
+    display: block;
+    border: 1px solid red;
+}

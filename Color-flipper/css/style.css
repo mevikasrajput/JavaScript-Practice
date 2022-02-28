@@ -1,4 +1,6 @@
-.body{
+@import"./responsive.css";
+
+body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
@@ -9,11 +11,21 @@
 
 }
 
+.nav-center{
+    display: block;
+    width: 100%;
+}
+
+/* .nav-links{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+} */
+
 .nav-center p{
     display: inline-block;
     font-size: 30px;
-    text-align: left;
-    margin-left: 350px;
+    text-align: center;
     font-weight: 900;
     color: rgb(104, 218, 247);
 }
@@ -21,12 +33,11 @@
 .nav-links li{
     display: inline;
     position: relative;
-    margin-left: 200px;
 }
 
-#hex{
+/* #hex{
     margin-left: -100px;
-}
+} */
 
 .nav-links li a{
     text-decoration: none;
