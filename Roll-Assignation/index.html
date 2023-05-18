@@ -1,0 +1,399 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="./css/virtual-select.min.css">
+    <link rel=”stylesheet”
+    href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Roll Assignation</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="header-section">
+        <div class="dropdown-menu">
+          <p>Hub</p>
+          <select class="select-item" id="multipleSelect" multiple name="native-select" placeholder="Noida SEZ-Tower2-U1-All Floors" data-search="false" data-silent-initial-value-set="true">
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+            <option value="Option5">Option5</option>
+            <option value="Option6">Option6</option>
+            <option value="Option7">Option7</option>
+            <option value="Option8">Option8</option>
+            <option value="Option1">Option1</option>
+            <option value="Option1">Option1</option>
+            <option value="Option1">Option1</option>
+            <option value="Option1">Option1</option>
+        </select>
+        </div>
+        <div class="search">
+          <p>Search</p>
+          <form action="#">
+            <input class="roleSearch" type="text" placeholder="Type here" name="search" />
+            <button type="button">
+              search
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div><p style="font-weight: 600;">Role(10)</p></div>
+
+      <div class="role-section">
+        <table border=0 id="table_detail" 
+            align=center cellpadding=0>
+  
+            <tr>
+                <th>Employee</th>
+                <th>Department</th>
+                <th>Project</th>
+                <th>Role</th>
+            </tr>
+  
+            <tr class="row1 grey-bg-td" >
+                <td>John Doe(52037182)</td>
+                <td>BTIS-EIS-EIS-DU1</td>
+                <td>PROJECT-V80087</td>
+                <td>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                </td>
+
+            </tr>
+            <tr id="hidden_row1" class="hidden_row">
+                <td colspan=4>
+                  <p>Assigned/Available Roles</p>
+                  <input type="checkbox" id="admin">
+                  <label for="admin">Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+
+                  <div class="main-btn-hidden-section">
+                    <button onclick="HideRow('hidden_row1');" type="submit">CANCEL</button>
+                    <button class="submit-btn" type="button">SUBMIT</button>
+                  </div>
+                </td>
+
+  
+            </tr>
+  
+            <tr class="row2" onclick="showHideRow('hidden_row2');">
+                <td>John Doe(51860000)</td>
+                <td>BTIS-EIS-EIS-DU1-DU2-EIS</td>
+                <td>PROJECT-V080087</td>
+                <td>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                  <span class="admin-role-chip">RM</span>
+                  <span class="admin-role-chip">Admin</span>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                  <span class="admin-role-chip">RM</span>
+                  <span class="admin-role-chip">Admin</span>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">RM</span>
+                  <span class="admin-role-chip">Admin</span>
+                </td>
+            </tr>
+            <tr id="hidden_row2" class="hidden_row">
+                <td colspan=4>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <div class="main-btn-hidden-section">
+                    <button onclick="HideRow('hidden_row2');" type="submit">CANCEL</button>
+                    <button class="submit-btn" type="button">SUBMIT</button>
+                  </div>
+                  
+                </td>
+            </tr>
+  
+            <tr onclick="showHideRow('hidden_row3');" class="grey-bg-td">
+              <td>John Doe(51860000)</td>
+              <td>BTIS-EIS-EIS-DU1</td>
+              <td>PROJECT-V0808907</td>
+                <td>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                </td>
+            </tr>
+            <tr id="hidden_row3" class="hidden_row">
+                <td colspan=4>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <div class="main-btn-hidden-section">
+                    <button onclick="HideRow('hidden_row3');" type="submit">CANCEL</button>
+                    <button class="submit-btn" type="button">SUBMIT</button>
+                  </div>
+                </td>
+            </tr>
+  
+            <tr onclick="showHideRow('hidden_row4');">
+              <td>John Doe(51860000)</td>
+              <td>BTIS-EIS-EIS-DU2-EIS</td>
+              <td>PROJECT-V089987</td>
+                <td>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                </td>
+            </tr>
+            <tr id="hidden_row4" class="hidden_row">
+                <td colspan=4>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <div class="main-btn-hidden-section">
+                    <button onclick="HideRow('hidden_row4');" type="submit">CANCEL</button>
+                    <button class="submit-btn" type="button">SUBMIT</button>
+                  </div>
+                </td>
+            </tr>
+  
+            <tr onclick="showHideRow('hidden_row5');" class="grey-bg-td">
+              <td>John Doe(51860000)</td>
+              <td>BTIS-EIS-DU1-DU2-EIS</td>
+              <td>PROJECT-V082287</td>
+                <td>
+                  <span class="admin-role-chip">Employee</span>
+                  <span class="admin-role-chip">Admin</span>
+                </td>
+            </tr>
+            <tr id="hidden_row5" class="hidden_row">
+                <td colspan=4>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <input type="checkbox" >
+                  <label>Admin</label>
+                  <input type="checkbox" >
+                  <label>Vendor</label>
+                  <input type="checkbox">
+                  <label>Employee</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Guard</label>
+                  <input type="checkbox">
+                  <label>SPOC</label>
+                  <input type="checkbox" checked="checked">
+                  <label>Help Desk</label>
+                  <input type="checkbox" >
+                  <label >Transport</label>
+                  <input type="checkbox" >
+                  <label >Vendor Billing</label>
+                  <input type="checkbox">
+                  <label >Hub Admin</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Report Viewer</label>
+                  <input type="checkbox">
+                  <label >Route Supervisor</label>
+                  <input type="checkbox" checked="checked">
+                  <label >Billing Executive</label>
+                  <div class="main-btn-hidden-section">
+                    <button onclick="HideRow('hidden_row5');" type="submit">CANCEL</button>
+                    <button class="submit-btn" type="button">SUBMIT</button>
+                  </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="multiselect/jquery.multiselect.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script> -->
+    <script src="./js/virtual-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+      VirtualSelect.init({ 
+        ele: '#multipleSelect' 
+      });
+    </script>
+  </body>
+</html>
