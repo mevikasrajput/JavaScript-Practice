@@ -1,0 +1,7 @@
+@media(max-width: 380px){
+    body .nav-links{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
