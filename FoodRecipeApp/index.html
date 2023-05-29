@@ -29,6 +29,7 @@
               type="text"
               class="search-control"
               placeholder="Enter an ingredients"
+              id="search-input"
             />
             <button type="submit" class="search-btn btn" id="search-btn">
               <i class="fas fa-search"></i>
@@ -40,7 +41,7 @@
           <h2 class="title">Your Search Results:</h2>
           <div id="meal">
             <!-- meal--item -->
-            <div class="meal-item">
+            <!-- <div class="meal-item">
               <div class="meal-img">
                 <img src="./food.jpeg" alt="" srcset="" />
               </div>
@@ -48,7 +49,7 @@
                 <h3>Potato Chips</h3>
                 <a href="#" class="recipe-btn">Get Recipe</a>
               </div>
-            </div>
+            </div> -->
             <!-- ---end of meal item --- -->
 
             <!-- meal--item -->
@@ -82,7 +83,7 @@
               </div>
               <div class="meal-name">
                 <h3>Potato Chips</h3>
-                <a href="#" class="recipe-btn">Get Recipe</a>
+                <a href="#" class="recipe-btn" data-toggle="meal-details-content">Get Recipe</a>
               </div>
             </div>
             <!-- ---end of meal item --- -->
